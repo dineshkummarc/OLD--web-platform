@@ -525,8 +525,7 @@ var Reveal = (function(){
 	 */
 	function readURL() {
 		// Break the hash down to separate components
-		var bits = window.location.hash.slice(2).split('/');
-		
+		var bits = window.location.hash.slice(1).split('/');
 		// Read the index components of the hash
 		indexh = bits[0] ? parseInt( bits[0] ) : 0;
 		indexv = bits[1] ? parseInt( bits[1] ) : 0;
