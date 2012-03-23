@@ -98,6 +98,330 @@
 			    </ul>
 				</section>
 
+			    <!-- KPIs -->
+			    <section>
+				 <h3>2012 KPIs: Goals and Metrics</h3>
+				 <div id="events">
+				   <div class="chartTitle">Community</div>
+				   <table id="eventtable">
+					<tbody>
+					  <tr>
+					    <th>KPI/Metric</th>
+					    <th>Major - Web Platform</th>
+					    <th>Major - Evangelists</th>
+					    <th>Other events</th>
+					  </tr>
+					  <tr>
+					    <th>YTD Actual</th>
+					    <td>0</td>
+					    <td>0</td>
+					    <td>4</td>
+					  </tr>
+					  <tr>
+					    <th>2012 Target</th>
+					    <td>3</td>
+					    <td>3</td>
+					    <td>20</td>
+					  </tr>
+					</tbody>
+				   </table>
+				 </div>
+
+				 <div id="presence">
+				   <div class="chartTitle">Web Presence</div>
+				   <table id="presencetable">
+					<tbody>
+					  <tr>
+					    <th>KPI/Metric</th>
+					    <th>Blog Hits</th>
+					    <th>ADC Articles</th>
+					  </tr>
+					  <tr>
+					    <th>YTD Actual</th>
+					    <td>0</td>
+					    <td>0</td>
+					  </tr>
+					  <tr>
+					    <th>2012 Target</th>
+					    <td>5</td>
+					    <td>3</td>
+					  </tr>
+					</tbody>
+				   </table>
+				 </div>
+
+				 <div id="standards">
+				   <div class="chartTitle">Web Standards</div>
+				   <table id="standardstable">
+					<tbody>
+					  <tr>
+					    <th>KPI/Metric</th>
+					    <th>Standards Hires</th>
+					    <th>W3 Spec Pubs</th>
+					    <th>W3 Blog Posts</th>
+					  </tr>
+					  <tr>
+					    <th>YTD Actual</th>
+					    <td>3</td>
+					    <td>0</td>
+					    <td>0</td>
+					  </tr>
+					  <tr>
+					    <th>2012 Target</th>
+					    <td>5</td>
+					    <td>6</td>
+					    <td>2</td>
+					  </tr>
+					</tbody>
+				   </table>
+				 </div>
+
+				 <div id="webkit">
+				   <div class="chartTitle">WebKit Team</div>
+				   <table id="webkittable">
+					<tbody>
+					  <tr>
+					    <th>KPI/Metric</th>
+					    <th>WebKit Hires</th>
+					    <th>WebKit Reviewers</th>
+					    <th>WebKit Committers</th>
+					    <th>WebKit Patches</th>
+					  </tr>
+					  <tr>
+					    <th>YTD Actual</th>
+					    <td>1</td>
+					    <td>0</td>
+					    <td>0</td>
+					    <td>44</td>
+					  </tr>
+					  <tr>
+					    <th>2012 Target</th>
+					    <td>8</td>
+					    <td>3</td>
+					    <td>8</td>
+					    <td>300</td>
+					  </tr>
+					</tbody>
+				   </table>
+				 </div>
+
+				 <div id="wef">
+				   <div class="chartTitle">WEF</div>
+				   <table id="weftable">
+					<tbody>
+					  <tr>
+					    <th>KPI/Metric</th>
+					    <th>WEF NPS</th>
+					    <th>WEF Eng Savings</th>
+					  </tr>
+					  <tr>
+					    <th>YTD Actual</th>
+					    <td></td>
+					    <td>0</td>
+					  </tr>
+					  <tr>
+					    <th>2012 Target</th>
+					    <td></td>
+					    <td>50</td>
+					  </tr>
+					</tbody>
+				   </table>
+				 </div>
+
+				 <link type="text/css" rel="stylesheet" href="css/visualize.jQuery.css"/>
+
+				 <script type="text/javascript" src="js/jquery.min.js"></script>
+				 <!--[if IE]><script type="text/javascript" src="https://zerowing.corp.adobe.com/download/attachments/317656861/excanvas.compiled.js"></script><![endif]-->
+				 <script type="text/javascript" src="js/visualize.JQuery.js"></script>
+
+				 <SCRIPT type="text/javascript">
+				   $(function(){
+				   $('#eventtable').visualize();
+				   
+				   //hide table
+				   $('#eventtable').addClass('accessHide');
+				   $('#presencetable').addClass('accessHide');
+				   $('#standardstable').addClass('accessHide');
+				   $('#webkittable').addClass('accessHide');
+				   $('#weftable').addClass('accessHide');
+
+				   var chartOptions = {};
+				   chartOptions["width"] = "300";
+				   chartOptions["height"] = "140";
+				   chartOptions["showDataLabels"] = true;
+				   $('.visualize').remove();
+				   $('#eventtable').visualize(chartOptions);
+				   $('#presencetable').visualize(chartOptions);
+				   $('#standardstable').visualize(chartOptions);
+				   $('#webkittable').visualize(chartOptions);
+				   $('#weftable').visualize(chartOptions);
+				   });
+
+				 </script>
+			    </section>
+
+			    <section>
+			    	<h2>Org Definition / Agendas</h2>
+				<ul>
+				  <li>Responsibilities
+				    <ul>
+					 <li>Contributing to the Web
+					   <ul>
+						<li>Cross-functional teams (standards, dev, test, design) in Bucharest and US</li>
+						<li>5-person team in Romania (+2 TBH)</li>
+						<li>10-person team in US (+8 TBH) - will become two teams</li>
+					   </ul>
+					 </li>
+					 <li>Enabling Web Technologies at Adobe (WEF)
+					   <ul>
+						<li>5-person team in Bucharest (+2 TBH)</li>
+					   </ul>
+					 </li>
+				    </ul>
+				  <li>Methodology
+				    <ul>
+					 <li>Scrum. Visible backlog, open reviews. </li>
+					 <li>1 week (Web) and 2 week (WEF) sprints</li>
+				    </ul>
+				  </li>
+				  <li>Management
+				    <ul>
+					 <li>Product Management: Deepa</li>
+					 <li>Program Management: Marc</li>
+					 <li>Standards: Vincent</li>
+					 <li>Engineering: Ethan</li>
+				    </ul>
+				</ul>
+			    </section>
+
+			    <section>
+			    	<h2>Target Audience: Community Segments</h2>
+			    	<ul>
+				  <li>What do we care about?</li>
+				  <li>Who are we targeting?</li>
+				  <li>What are we enabling people to build?</li>
+				</ul>
+			    </section>
+
+			    <section>
+			    	<h2>State of the Web Platform</h2>
+			    	<ul>
+				  <li>Higher Level Trends</li>
+				  <li>What’s Big This Year</li>
+				  <li>Apps/site examples that demos the leading edge</li>
+				</ul>
+			    </section>
+
+			    <section>
+			    	<h2>Who is building the Web Platform?</h2>
+			    <table class="minimal-style">
+			      <thead>
+			      <tr><th>Company</th><th>Committers (200 total)</th><th>Reviewers (105 total)</th></tr>
+			      </thead>
+			      <tbody>
+				   <tr><td>Apple</td><td>27</td><td>46</td></tr>
+				   <tr><td>Google</td><td>103</td><td>25</td></tr>
+				   <tr><td>Nokia</td><td>15</td><td>9</td></tr>
+				   <tr><td>RIM</td><td>5</td><td>5</td></tr>
+				   <tr><td>Igalia</td><td>3</td><td>4</td></tr>
+				   <tr><td>Sencha</td><td>2</td><td>1</td></tr>
+				   <tr><td>Adobe</td><td>2</td><td>1</td></tr>
+			      </tbody>
+			    </table>
+				
+			    	<ul>
+				  <li>Ryosuke Niwa/ Eric Seidel - build/test infrastructure and automation</li>
+				  <li>Dave Hyatt (apple) – Layout</li>
+				</ul>
+			    </section>
+
+			    <section>
+			    	<h3>Who is building the Web Platform?: W3C</h3>
+			    	<ul>
+				  <li>Many companies are involved in W3C which covers a wide technology area:
+				    <ul>
+					 <li>HTML, DOM, CSS, SVG, Web applications, Web and TV, i18n, accessibility, etc...</li>
+				    </ul>
+				  </li>
+				  <li>In the working group that our team is part of, the key players are:
+				    <ul>
+					 <li>CSS Working Group
+					   <ul>
+						<li>Google – Working on all things leading to a better Web application platform. Foundation features (such as CSS Values and Units, CSS Variables, CSS Mixins, CSS Backgrounds and Borders for example)</li>
+						<li>Apple – Workking on things that enhance their use of HTML5 in iTunes (such as CSS Animations, CSS Transitions, CSS 2D/3D Transforms, CSS Filter Effects)</li>
+						<li>Mozilla / Microsoft – Working on things that are layout related and catching up with some of the advanced WebKit features (animations, 3D).</li>
+						<li>Opera – Focused on layout and digital publishing at the moment.</li>
+					   </ul>
+					 </li>
+					 <li>SVG Working Group
+					 <ul>
+					   <li>Google / Apple – Working on interoperability issues between CSS and SVG (e.g., gradients, animations, filters)</li>
+					   <li>Mozilla – Working on the animation foundation for CSS and SVG (Web animations)</li>
+					   <li>Canon – Working on making SVG’s rendering model rich enough for print workflows and advanced rendering workflows </li>
+					 </ul>
+					 </li>
+				    </ul>
+				  </li>
+				</ul>
+			    </section>
+
+			    <section>
+			    	<h3>Who is involved in building the Web Platform?</h3>
+			    	<ul>
+				  <li>The Whatwg is not strictly speaking a standard committee, more of an alliance. However, it is a realy force in defining the Web platform. In particular, it has a big influence on HTML5 and Web Applications APIs</li>
+				  <li>There are other key standard bodies that take part in shaping the Web platform, most importantly:
+				    <ul>
+					 <li>IETF: transport protocols (e.g., HTTP, WebRTC transport)</li>
+					 <li>ECMA: ECMAScript / JavaScript</li>
+					 <li>MPEG: multi-media features (e.g., MPEG, H264, Dash)</li>
+				    </ul>
+				  </li>
+				  <li>JavaScript frameworks play a key role in shaping the Web platform:
+				    <ul>
+					 <li>Jquery</li>
+					 <li>Modernizr</li>
+					 <li>YUI</li>
+					 <li>DoJo</li>
+				    </ul>
+				  </li>
+				</ul>
+			    </section>
+
+			    <section>
+			    	<h3>What's happened so far (layout / typography)?</h3>
+			    	<ul>
+				  <li>CSS Regions:
+				    <ul>
+					 <li>W3C Working Drafts</li>
+					 <li>WebKit implementation in progress</li>
+				    </ul>
+				  </li>
+				  <li>CSS Exclusions
+				    <ul>
+					 <li>W3C Working Draft</li>
+					 <li>WebKit implementation started</li>
+				    </ul>
+				  </li>
+				  <li>CSS Filters (Shaders)
+				    <ul>
+					 <li>W3C proposal. Integration in CSS Filter Working Draft in progress</li>
+					 <li>WebKit implementation started</li>
+				    </ul>
+				  </li>
+				  <li>CSS Transforms
+				    <ul>
+					 <li>W3C Merged Specification effort</li>
+					 <li>WebKit implementation started</li>
+				    </ul>
+				  </li>
+				  <li>CSS Compositing
+				    <ul>
+					 <li>Starting work on CSS compositing specification</li>
+				    </ul>
+				  </li>
+				</ul>
+			    </section>
+
 				<section id="focus">
 					<h2>Where will <strong>we</strong> focus?</h2>
 			    <ul>
@@ -210,13 +534,122 @@
 			      </li>
 			    </ul>
 			    </section>
-			    
+
+			    <section>
+			    	<h2>Community Involvement Plan</h2>
+			    	<ul>
+				  <li>Evangelizing to the standards and WebKit community will come from the Web Platform team</li>
+				  <li>General evangelizing to broader web dev community will be a joint effort across evangelism and individual product teams including Web Platform</li>
+				  <li>Announcements are timed with major events. Major events trump others.</li>
+				  <li>Presentations are not limited to what Adobe is working on.</li>
+				</ul>
+			    </section>
+
+
+			    <section>
+			    	<h2>Conference Plan</h2>
+							    <table class="minimal-style">
+			      <thead>
+			      <tr><th>Date</th><th>Conference</th><th>Involvement</th></tr>
+			      </thead>
+			      <tbody>
+				   <tr><td>16-Apr</td><td>WWW 2012</td><td></td></tr>
+				   <tr><td>26-Apr</td><td>Front Trends</td><td></td></tr>
+				   <tr><td>6-May</td><td>SVG Working Group</td><td></td></tr>
+				   <tr><td>9-May</td><td>CSS Working Group</td><td></td></tr>
+				   <tr><td>19-May</td><td>Web Afternoon Atlanta</td><td></td></tr>
+				   <tr><td>30-May</td><td>@Media</td><td></td></tr>
+				   <tr><td>27-Jun</td><td>Google I/O</td><td></td></tr>
+				   <tr><td>2-Aug</td><td>WD CNC</td><td></td></tr>
+				   <tr><td>13-Aug</td><td>CSS Working Group</td><td></td></tr>
+				   <tr><td>11-Sep</td><td>Graphical Web</td><td></td></tr>
+				   <tr><td>20-Oct</td><td>MAX</td><td></td></tr>
+				   <tr><td>29-Oct</td><td>TPAC</td><td></td></tr>
+				   <tr><td>11?/?</td><td>W3Conf</td><td></td></tr>
+			      </tbody>
+			    </table>
+			    </section>
+
+			    <section>
+			    	<h2>Adobe Driven Events</h2>
+				<table class="minimal-style">
+			      <thead>
+			      <tr><th>Date</th><th>Conference</th><th>Involvement</th></tr>
+			      </thead>
+			      <tbody>
+				   <tr><td>June</td><td>Adobe External Hackathon US</td><td></td></tr>
+				   <tr><td>August</td><td>Adobe External Hackathon China</td><td></td></tr>
+			      </tbody>
+			    </table>
+
+			    </section>
+
+			    <section>
+			    	<h3>Web and Social Presence</h3>
+			    	<ul>
+				  <li>adobewebplatfrm (Twitter/Facebook/Google+)
+				    <ul>
+					 <li>Social media – tweets, links, etc.</li>
+				    </ul>
+				  </li>
+				  <li>blogs.adobe.com/webplatform
+				    <ul>
+					 <li>News, announcements, achievements, etc., posted here</li>
+				    </ul>
+				  </li>
+				  <li>github.com/adobe/[PROJECT]
+				    <ul>
+					 <li>Pre-release binaries, sample code, and docs will be kept here</li>
+				    </ul>
+				  </li>
+				  <li>adobe.github.com/adobe/[PROJECT]
+				    <ul>
+					 <li>Hosted samples for pre-release builds will be kept here</li>
+				    </ul>
+				  </li>
+				  <li>webplatform.adobe.com
+				    <ul>
+					 <li>Hosting of live samples and links to downloads on github</li>
+				    </ul>
+				  </li>
+				  <li>Individual user blogs and github accounts
+				    <ul>
+					 <li>Experiments, explorations, etc., will be posted here</li>
+				    </ul>
+				  </li>
+				  <li>open@adobe
+				    <ul>
+					 <li>Links to any open source projects will be posted here</li>
+				    </ul>
+				  </li>
+				  <li>“Adobe and HTML” YouTube Channel
+				    <ul>
+					 <li>Overviews and Tutorials</li>
+				    </ul>
+				  </li>
+				</ul>
+			    </section>
+
+			    <section>
+			    	<h2>Risks</h2>
+				<table class="minimal-style">
+			      <thead>
+				   <tr><td>Risk</td><td>Rank</td><td>Mitigation Options</td><td>Owner</td><td>Next Steps</td></tr>
+			      </thead>
+			      <tbody>
+				   <tr><td></td><td></td><td></td><td></td><td></td></tr>
+			      </tbody>
+			    </table>
+
+			    </section>
+
 			    <section>
 			    	<h2>Topics Under Investigation</h2>
 			    	<ul>
 			    		<li>Engineering plan for JavaScript contributions</li>
 			    		<li>Requirement for desktop access to leading-edge Web Technologies</li>
 			    		<li>Engineering velocity</li>
+				</ul>
 			    </section>
 
 			    <section id="end">

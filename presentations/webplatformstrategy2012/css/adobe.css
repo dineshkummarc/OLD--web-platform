@@ -71,8 +71,40 @@ li ol li, li ul li {
     line-height: 1.3em;
 }
 
+section .chartTitle {
+    width: 302px;
+    font-size: 16px;
+}
+
+#events {
+    position: absolute;
+    top: 80px;
+}
+
+#presence {
+    position: absolute;
+    left: 500px;
+    top: 80px;
+}
+
+#standards {
+    position: absolute;
+    top: 285px;
+}
+
+#webkit {
+    position: absolute;
+    left: 500px;
+    top: 285px;
+}
+
+#wef {
+    position: absolute;
+    top: 490px;
+}
+
 /*MINIMAL STYLE*/
-table.minimal-style { border-collapse: collapse; font-size: 16px; text-align: left; min-width: 1000px; margin-bottom:25px; line-height: 1.2em;}
+table.minimal-style { margin-left:auto; margin-right:auto; border-collapse: collapse; font-size: 16px; text-align: left; min-width: 1000px; margin-bottom:25px; line-height: 1.2em;}
 table.minimal-style th { border-bottom: 2px solid #ffffff; color: #ffffff; font-size: 18px; font-weight: normal; padding: 5px; }
 table.minimal-style td { border-bottom: 1px solid #CCCCCC; color: #999; padding: 4px 6px; }
 table.minimal-style tbody tr:hover td {color:#ffffff;}

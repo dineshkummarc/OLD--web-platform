@@ -148,7 +148,6 @@ html {
 
 #reveal ol, 
 #reveal ul {
-	display: inline-block;
 
 	text-align: left;
 	margin: 0 auto;
