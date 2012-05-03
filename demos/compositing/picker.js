@@ -1,19 +1,10 @@
 var bgs = [
+'http://www.sxc.hu/pic/l/e/ex/exian/456692_89727447.jpg',
 'http://www.mikeswanson.com/wallpaper/images/MSwanson%20-%20Water%2006.jpg',
 'http://www.mikeswanson.com/wallpaper/images/MSwanson%20-%20Rock%2002.jpg',
 'http://www.mikeswanson.com/wallpaper/images/MSwanson%20-%20Leaf%2028.jpg',
 'http://www.mikeswanson.com/wallpaper/images/MSwanson%20-%20Wide%20-%20Grass%2001.jpg',
-'http://www.mikeswanson.com/wallpaper/images/MSwanson%20-%20Leaf%2010.jpg',
-'textures/grungetext-005.jpg', 
-'textures/grungetext-006.jpg',
-'textures/grungetext-007.jpg',
-'textures/grungetext-008.jpg',
-'textures/grungetext-009.jpg',
-'textures/grungetext-010.jpg',
-'textures/grungetext-011.jpg',
-'textures/grungetext-012.jpg',
-'textures/grungetext-014.jpg',
-'textures/grungetext-015.jpg' 
+'http://www.mikeswanson.com/wallpaper/images/MSwanson%20-%20Leaf%2010.jpg', 
 ];
 
 
