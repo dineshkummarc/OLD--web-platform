@@ -17,7 +17,6 @@
 @-webkit-region .right-region {
 	.region-style h2 {
 		background-color: #46A4E9;
-		color: rgba(255, 255, 255, 0.7);
 	}
 	.region-style {
 		background-color: #e0e0e0
@@ -25,24 +24,7 @@
 }
 
 #regions-container {
-    display: block;
     background: #fafafa;
     box-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.15);
     border: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-article {
-    -webkit-flow-into: article;
-    -moz-flow-into: article;
-    -ms-flow-into: article;
-    -o-flow-into: article;
-    flow-into: article;
-}
-
-.region {
-	-webkit-flow-from: article;
-	-moz-flow-from: article;
-	-ms-flow-from: article;
-	-o-flow-from: article;
-	flow-from: article;
 }

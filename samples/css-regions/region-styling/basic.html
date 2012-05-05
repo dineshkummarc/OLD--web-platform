@@ -21,8 +21,8 @@
 	}
 
 	document.addEventListener('DOMContentLoaded', function() {
-		var shuffleButton = document.getElementById('shuffle');
-		shuffleButton.addEventListener('click', function(e) {
+		var applyStylingButton = document.getElementById('apply-region-styling');
+		applyStylingButton.addEventListener('click', function(e) {
 			toggleRegionStyle();
 			toggleRegionLayout();
 		});
@@ -42,32 +42,65 @@
 		margin-top: 0;
 		padding-top: .25em;
 	}
-	#shuffle {
+	#apply-region-styling {
 		position: absolute;
 		display: block;
-		width: 64px;
-		height: 64px;
-		top: 24px;
-		left: 24px;
 		z-index: 1000;
+		
+		background: rgb(232,4,53); /* Old browsers */
+        background: -moz-linear-gradient(-45deg,  rgba(232,4,53,1) 0%, rgba(109,0,25,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(232,4,53,1)), color-stop(100%,rgba(109,0,25,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(-45deg,  rgba(232,4,53,1) 0%,rgba(109,0,25,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(-45deg,  rgba(232,4,53,1) 0%,rgba(109,0,25,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(-45deg,  rgba(232,4,53,1) 0%,rgba(109,0,25,1) 100%); /* IE10+ */
+        background: linear-gradient(-45deg,  rgba(232,4,53,1) 0%,rgba(109,0,25,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e80435', endColorstr='#6d0019',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        
+        color: white;
+        font-family: sans-serif;
+        text-shadow: 1px -1px solid rgba(0, 0, 0, 0.5);
+        text-decoration: none;
+        padding: 1em;
+        text-align: center;
+        border-radius: 0.5em;
+        box-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        top: 0.5em;
+        -webkit-transform: rotate(-25deg);
+        -moz-transform: rotate(-25deg);
+        -ms-transform: rotate(-25deg);
+        -o-transform: rotate(-25deg);
+        transform: rotate(-25deg);
+        cursor: pointer;
 	}
-	#shuffle>img {
-		display: block;
+	
+	
+	#apply-region-styling span{
+	    display: block;
+	    font-size: smaller;
+	    
 	}
 
 	article p {
-		font-family: 'Ubuntu', sans-serif;
-		padding-left: .5em;
-		padding-right: .5em;
+		font-family: sans-serif;
+		padding-left: 1.3em;
+		padding-right: 1em;
+		margin-bottom: 1em;
 	}
+	
 	article ul {
 		padding-right: .5em;
-		font-family: 'Ubuntu', sans-serif;
+		font-family: sans-serif;
 	}
+	
 	article h1, article h2 {
-		font-family: 'Russo One', cursive;
-		font-weight: normal;
-		padding-left: 1em;
+		font-family: sans-serif;
+		font-weight: bold;
+		padding-left: 0.5em;
+		padding-bottom: 0.3em;
+		font-variant: small-caps;
+		color: rgba(0, 0, 0, 0.7);
+		letter-spacing: -0.07em;
 	}
 
 	#regions-container {
@@ -85,40 +118,41 @@
 	.flow-from {
 		-webkit-flow-from: article;
 	}
-	
-	.region {
-		border: medium solid #BABDB6;
 
+	.region {
+        background: #fafafa;
+        box-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.15);
+        border: 1px solid rgba(0, 0, 0, 0.2);
 		position: absolute;
 		height: 90%;
 		top: 5%;
-
-		background-color: #FAFAFA;
 	}
 
-	@-webkit-region .left-region {
-		.region-style h2 {
-			background-color: #9CB7CF;
-		}
-		.region-style h1~p:nth-of-type(1) {
-			background-color: #BBD0E3;
-		}
+    @-webkit-region .left-region {
+    	.region-style h2 {
+    		background-color: white;
+    	}
 
-		.region-style {
-			background-color: #D7E8F7;
-		}
-	}
-	@-webkit-region .right-region {
-		.region-style h2 {
-			background-color: #CFA679; /*#9CB7CF;*/
-		}
-		.region-style {
-			background-color: #F2E7D5;
-		}
-	}
-	.region-style {
-	}
-	
+    	.region-style h1 {
+    	    background-color: rgba(255, 255, 255, 0.5);
+    	}
+    	.region-style h1~p:nth-of-type(1) {
+    		background-color: #c0c0c0;
+    	}
+
+    	.region-style {
+    		background-color: #f0f0f0;
+    	}
+    }
+    @-webkit-region .right-region {
+    	.region-style h2 {
+    		background-color: #46A4E9;
+    	}
+    	.region-style {
+    		background-color: #e0e0e0
+    	}
+    }
+
 	.left-region {
 		width: 40%;
 		left: 8%;
@@ -126,10 +160,11 @@
 	.right-region {
 		width: 40%;
 		left: 54%;
-		
+
 		-webkit-region-overflow: break;
 		overflow: hidden;
 	}
+	
 	.image-wrap {
 		text-align: center;
 		display: block;
@@ -137,11 +172,12 @@
 	.image-wrap>img {
 		width: 75%;
 		max-width: 35em;
+		margin-bottom: 1em;
 	}
 	</style>
 </head>
 <body>
-	<a href="#" id="shuffle"><img src="img/mix.png" alt=""/></a>
+	<a href="#" id="apply-region-styling">toggle<span>region styling!</span></a>
 	<article>
 		<h1>Filler text on the web</h1>
 		<span class='image-wrap'><img src='img/movable_type.jpg'/></span>
